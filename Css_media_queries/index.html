@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css_media_queries</title>
+    <style>
+        body{
+            background-color: rgb(0, 255, 76);
+        }
+        @media only screen and (max-width:455px){
+            body{
+                background-color: rgb(0, 255, 76);
+            }/*when the size reduces then the color changes to blue*/
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        @media only screen and (orientation:landscape){
+            .boxes{
+                border: 2px solid yellow;
+            }
+        }
+        @media only screen and (orientation:portrait){
+            .boxes{
+                border: 2px solid red;
+            }
+        }
+        /* @media only screen and (min-width:455px){
+            body{
+                background-color: green;
+            } 
+        } */
+        /*whent eh size of the screen increases more than 455 px than its color changes t
+            to green*/
+        .boxes{
+            display:flex;
+        }
+        .box{
+            height: 344px;
+            width: 344px;
+            background-color: blue;
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        I am a webdevloper
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    
+</body>
+</html>

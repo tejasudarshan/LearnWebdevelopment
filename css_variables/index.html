@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        /*it can hold values and colors*/
+        /*declaring global variables*/
+        :root{
+            --color: blue;  
+            --seccolor:rgb(187, 187, 240);
+            --defpad:24px;/*padding */
+            --defop:0.4;//*opacity*/
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /* background-color: aqua; */
+            background-color: var(--color);
+        }
+        .container{
+            /* background-color: aquamarine; */
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;/*make the horizontal content into verticle*/
+        }
+        ul li{
+            list-style: none;/*removes numbering or bullets*/
+            /*padding: 44px;adds space around the list elements*/
+            opacity: var(--defop);
+            padding: var(--defpad);
+            border: 2px solid black;
+        }
+        ul li:first-child{
+            --color: rgb(243,8,7);
+
+            /*if color is not defined then blue is taken*/
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <div class="nav">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contacts</li>
+        <li>Services</li>
+    </ul>
+    </div>
+    <div class="container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque omnis quas illum eveniet dolores quia incidunt, sint, nesciunt tenetur adipisci assumenda quis, officiis temporibus praesentium vitae consectetur consequatur molestias soluta.</div>
+</body>
+</html>

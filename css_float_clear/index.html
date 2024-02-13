@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_flota_clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+            display:flow-root;
+        }
+        .card{
+            border: 2px solid grey;
+        }
+        .card:nth-child(3){
+            background-color: blueviolet;
+            clear:left;/*it doesn't not allow any other content floating on its both sides(card2)*/
+            /*card1 allows other content around it*/
+        }
+        .card:nth-child(2){
+            background-color: blue;
+            clear:both;/*it doesn't not allow any other content floating its left side(card2)*/
+            /*card1 allows other content around it*/
+        }
+        img{
+            float:left;
+        }
+    </style>
+</head>
+<body>
+    /*.card>.card*3*/
+    <div class="cards">
+        <img src="mybike.jpg" alt="bike_photo">
+        <div class="card">
+            <p>card 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequuntur soluta deserunt ipsa eum saepe expedita provident corrupti. Ab quasi similique modi a culpa exercitationem accusantium iste totam assumenda possimus deleniti, molestias minima repellendus tempora itaque. Sequi nemo facilis aliquam eaque sint assumenda molestias ut laboriosam laudantium, dicta natus dolores voluptates perspiciatis. Atque nisi, consectetur unde animi tenetur dolorem vel! A aliquam quas nostrum tenetur, perspiciatis nulla itaque accusantium esse. Similique iure, consequatur ipsum aperiam totam, consequuntur velit illum at molestiae vero laborum saepe sint, asperiores perspiciatis quidem. Repellat, ex consectetur saepe autem, sapiente amet repudiandae nostrum distinctio quia ea dolorum cum ipsa fuga ducimus obcaecati quas debitis earum ipsam odio praesentium similique sunt? Corporis, fuga voluptas doloremque sit accusamus excepturi non veniam, rem laudantium laborum modi quo, perferendis sint deleniti dolore aperiam voluptatibus aspernatur? Excepturi aliquid cum hic modi facilis unde quasi laboriosam nostrum assumenda libero qui sunt, veritatis officia nihil atque voluptatum? Minus, voluptas ut, nostrum optio architecto aspernatur error cum placeat quo unde at corrupti accusamus recusandae cumque veniam numquam fuga dolorum inventore ipsum corporis totam voluptatem. Ratione, esse dignissimos laborum delectus nostrum velit quo porro dolorem perferendis ad consequatur modi illo, sed maxime similique obcaecati nam! Libero eius sapiente nisi, porro doloribus animi neque natus cupiditate saepe accusamus nobis fugiat, odit iure rerum molestiae, modi labore ex suscipit provident ad laudantium dicta. Quis saepe deserunt repellendus. Molestias iusto ratione commodi fugiat laboriosam eum alias, eveniet natus rerum cupiditate id repellendus recusandae tenetur, enim fuga ab harum consequatur culpa. Minima consectetur consequuntur illum maxime cupiditate est animi quam, aspernatur rerum voluptas? Praesentium tempore est recusandae facere mollitia unde! Quis harum voluptates illo consequuntur maiores, obcaecati eligendi odio explicabo aut aperiam culpa vero dolor ullam libero dolorem ut ipsam itaque necessitatibus corrupti doloribus. At ducimus dolorem modi nam!</p>
+        </div>
+        <div class="card">card2</div>
+        <div class="card">card3</div>
+    </div> 
+</body>
+</html>

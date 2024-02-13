@@ -1,0 +1,4 @@
+collect all the necessary images and videos of the website you are making clone of.
+
+make a layout of the website.
+

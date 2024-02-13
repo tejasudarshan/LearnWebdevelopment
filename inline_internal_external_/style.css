@@ -1,0 +1,49 @@
+ol{
+    color: green;
+    font-weight: 100;
+}
+/*Class selector*/
+.headings{
+    background-color: brown;
+}
+/*ID Selector*/
+#head{
+    color: maroon;
+}
+/*Child selector*/
+div > p{
+    color: blue;
+    background-color: green;
+}
+/*Deendent selector(doesn't matter it is within which section it will get the attribute)*/
+
+div  p{
+    color: blue;
+    background-color: green;
+}
+
+*{
+    margin: 4;
+    padding: 0;
+}
+
+/*pseudo selector*/
+a:visited{
+    color: rgb(234, 255, 0);
+}
+a:link{
+    color: green;
+}
+a:active{
+    background-color:rgba(0, 255, 255, 0.444);
+}
+
+a:hover{
+    background-color: blue;
+}
+
+p:first-child{
+    background-color:violet;
+}
+
+

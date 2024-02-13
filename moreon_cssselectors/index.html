@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .boxes{
+            background-color:  grey;
+            border: 2px solid black;
+        }/*gives border to the whole card*/
+        .boxes2 *{
+            background-color: teal;
+            border: 2px solid black;
+        }/*gives border to each card elements*/
+        [data-color="primary"]{
+            margin-top: 44px;
+            padding-top: 4px;
+        } 
+        /*gives top padding within the element and top margin outside the elenet which is in between
+        boxes and boxes 2*/
+        /*we can do this for data,class,ID no matter what attribute it is*/
+
+        /* p, a, .box, [data-color="primary"]{
+            margin-top: 44px;
+            padding-top: 4px;
+        } */
+        /*this is called grouping of selectors*/
+
+        .box:nth-child(even){
+            color:yellow;
+        }    
+             /*(nth-child,nath-last-child) are pseudo seletor*/
+        .box:nth-last-child(3){
+            color: brown;
+        }
+        .boxes2:before{
+            content: "elements can be directly added trough CSS before the main elements of the boxes";
+            color: green;
+        }
+
+        .boxes:after{
+            content: "this is how we can add content dynamically throuh CSS";
+            color:whitesmoke;
+        }
+        ::selection{
+            background-color: black;
+            color: red;
+    
+        }/*select a text on html page in browser selected contents will have background black and text red*/
+        .box::first-letter{
+            font-style: italic;
+            color: red;
+            font-size: large;
+        }
+        input::placeholder{
+           color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">hey iam a box</div>
+        <div class="box">hey iam a box</div>
+        <div class="box">hey iam a box</div>
+    </div>
+    <div data-color="primary" class="boxes2">
+        <div class="box">hey iam a box</div>
+        <div class="box">hey iam a box</div>
+        <div class="box">hey iam a box</div>
+    </div>
+    <div><input type="text" placeholder="type here"></div>
+</body>
+</html>
