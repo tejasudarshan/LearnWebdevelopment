@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+body{
+    font-family: "Poppins",sans-serif;
+    --tw-bg-opacity: 1;
+    background-color: rgba(0, 0, 255, 0.432);
+}
+
