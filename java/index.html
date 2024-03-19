@@ -1,0 +1,38 @@
+<script>
+  let rand = math.random()
+  let first, second , third;
+    if(rand<0.33){
+      first = "Crazy"
+      //0 0.33 0.66 1
+      //lets generate the first word
+    }else if(rand<0.66 && rand>=0.33){
+      first = "Amazing"
+    }else{
+      first = "Fire"
+    }
+  
+  //lets generate the second word
+  rand = math.random()
+  if(rand<0.33){
+      second = "Bros"
+      //0 0.33 0.66 1
+      //lets generate the first word
+    }else if(rand<0.66 && rand>=0.33){
+      second = "Limited"
+    }else{
+      second = "Hub"
+    }
+
+  //lets generate the third word
+  rand = math.random()
+  if(rand<0.33){
+      Third = "Engine"
+      //0 0.33 0.66 1
+      //lets generate the first word
+    }else if(rand<0.66 && rand>=0.33){
+      Third = "Foods"
+    }else{
+      Third = "Garments"
+    }
+  console.log(`${first} ${second} ${third}`)
+<script>
